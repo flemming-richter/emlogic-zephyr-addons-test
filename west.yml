@@ -1,0 +1,25 @@
+manifest:
+  defaults:
+    remote: upstream
+
+  remotes:
+    - name: upstream
+      url-base: git@github.com:flemming-richter/emlogic-zephyr-addons-test.git
+
+  ##
+  # please add projects in alphabetical order
+  projects:
+    - name: zephyr
+      url: https://github.com/zephyrproject-rtos/zephyr
+      revision: main
+      import: true
+
+  #self:
+  #  path: app
+
+  self:
+    path: emlogic-zephyr-addons-test
+
+  #self:
+  #  path: zephyr
+  #  west-commands: scripts/west-commands.yml
